@@ -1,0 +1,44 @@
+body {
+  background-color: skyblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contentBox {
+  margin: 5vh;
+  background-color: snow;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 75vw;
+  height: 75vh;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px black;
+}
+
+.addItems{
+  margin-top: 10vh;
+
+}
+.tasks {
+  margin: 10px
+}
+
+.button{
+  font-size: 1.5em;
+}
+.taskTitle{
+  text-align: center;
+  font-size: 2em;
+
+}
+
+.title {
+  font-size: 3em;
+  color: snow;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+  margin: 5vh
+}
+
