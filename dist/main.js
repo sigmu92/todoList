@@ -1,0 +1,1 @@
+(()=>{"use strict";const t=document.querySelectorAll("input");[].push(new class{constructor(t="",e="",s="",c="",i=!1){this.title=t,this.description=e,this.dueDate=s,this.priority=c,this.complete=i}}(document.getElementById("add-task").addEventListener("click",(function(){let e=[];t.forEach((t=>{e.push(function(t){const e=t.value;return t.value="",e}(t))}))}))))})();
