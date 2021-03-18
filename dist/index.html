@@ -10,13 +10,23 @@
   <body id="container">
     <div>
       <div id="title" class="title">Task Manager</div>
+      
       <div id="form-container" class="contentBox">
+        
         <div id="new-task" class="addItems">
+          
           <div class="taskTitle">Add a new Task!</div>
           <div class="tasks">Title: <input id="title" type="text"></input></div>
           <div class="tasks">Description: <input id="description" type="text"></input></div>
-          <div class="tasks">Due Date: <input id="dueDate" type="text"></input></div>
-          <div class="tasks">Priority: <input id="priority" type="text"></input></div>
+          <div class="tasks">Due Date: <input id="dueDate" type="date"></input></div>
+          <div class="tasks">Priority: <select id="priority">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
           <button id="add-task" class="button">Add Task</button>
         </div>
       </div>

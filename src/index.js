@@ -1,23 +1,27 @@
 import Task from "./newTask.js"
+import taskList from "./taskList.js"
 
-let Tasklist = []
 
-const newTaskInputs = document.querySelectorAll("input")
+
+const newTaskInputs = document.querySelectorAll(".tasks")
+
+
 
 
 function genArr(){
   let arr = []
   newTaskInputs.forEach(input => {
-    arr.push(getData(input))
+    arr.push(input.firstElementChild.value)
+    input.firstElementChild.value = ''
   })
+  return arr
 }
 
-function getData(input){
-  const data = input.value
-  input.value = ""
-  return data
+function newTask(){
+  const task = new Task(...genArr())
+  taskList.addTask(task)
 }
 
-Tasklist.push(new Task(document.getElementById("add-task").addEventListener("click", genArr)))
+document.getElementById("add-task").addEventListener("click", newTask)
 
 
